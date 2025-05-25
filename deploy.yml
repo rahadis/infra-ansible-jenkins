@@ -1,5 +1,5 @@
 - name: Install nginx
-  hosts: web
+  hosts: all
   become: true
   tasks:
     - name: Update apt cache
@@ -16,3 +16,4 @@
         name: nginx
         state: started
         enabled: yes
+
